@@ -1,6 +1,6 @@
-import React from 'react'
-import {Col, Row} from 'react-bootstrap'
-import {CgCPlusPlus} from 'react-icons/cg'
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { CgCPlusPlus } from 'react-icons/cg';
 import {
   DiJavascript1,
   DiReact,
@@ -8,14 +8,15 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-} from 'react-icons/di'
+} from 'react-icons/di';
 import {
   SiFirebase,
-} from 'react-icons/si'
+  SiTailwindcss, // Importing the Tailwind CSS icon
+} from 'react-icons/si';
 
 function Techstack() {
   return (
-    <Row style={{justifyContent: 'center', paddingBottom: '50px'}}>
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
@@ -40,8 +41,11 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss /> {/* Adding Tailwind CSS icon */}
+      </Col>
     </Row>
-  )
+  );
 }
 
-export default Techstack
+export default Techstack;
